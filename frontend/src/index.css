@@ -1,4 +1,7 @@
 @import "tailwindcss";
+.text-outline {
+  -webkit-text-stroke: 2px black; /* width + color */
+}
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

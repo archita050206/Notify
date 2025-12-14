@@ -1,4 +1,16 @@
 @import "tailwindcss";
+.text-outline {
+  -webkit-text-stroke: 1px rgb(0, 0, 0); /* width + color */
+}
+.text-outline1 {
+  -webkit-text-stroke: 0.8px rgb(32, 32, 32); /* width + color */
+}
+.text-shadow {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+.text-shadow1 {
+  text-shadow: 4px 4px 6px rgba(70, 70, 70, 0.6);
+}
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
