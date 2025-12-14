@@ -10,13 +10,15 @@ import com.example.notify.model.Note; // importing the Note model
 import com.example.notify.repository.NoteRepository; // importing the repository
 
 @RestController //--> automatically converts returned objects into JSON
-@RequestMapping("/api/notes") //--> base url for all APIs in this controller (ex: get /api/notes)
+@RequestMapping("/notes") //--> base url for all APIs in this controller (ex: get /api/notes)
 @CrossOrigin(origins = "http://localhost:5173")//--> allows requests from forontend (react running on port 5173)
 
 public class NoteController {
-    @Autowired 
-    private NoteRepository noteRepository;//--> injects noteRepository for us to use built in functions of mongo
-
+   
+    private final NoteRepository noteRepository;//--> injects noteRepository for us to use built in functions of mongo
+    public NoteController(NoteRepository noteRepository) {
+        this.noteRepository = noteRepository;
+    }
     
     /*
      * POST API
