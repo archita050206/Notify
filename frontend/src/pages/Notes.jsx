@@ -31,19 +31,19 @@ function Notes() {
     <div className="min-h-screen bg-cover bg-center" style={{backgroundImage: `url(${bgImg})`}}>
     <div className="max-w-5xl mx-auto p-6 pt-10" >
       {/* Form */}
-      <div className=" rounded-xl shadow-lg p-6 mb-8 bg-gray-300/80">
+      <div className=" rounded-xl shadow-lg p-6 mb-8 bg-gray-200/80">
         <h2 className="text-4xl font-bold mb-7 bg-clip-text text-transparent bg-gradient-to-br from-indigo-700 to-pink-500 text-outline1 text-shadow-2">Add a New Note</h2>
         <div className="grid gap-4 md:grid-cols-2">
           <input
             type="text"
             placeholder="Title"
-            className="w-full border  rounded-lg p-3 focus:ring-2 focus:ring-gray-300 focus:outline-none placeholder-gray-900"
+            className="w-full border  rounded-lg p-3 focus:ring-2 focus:ring-gray-500 focus:outline-none placeholder-gray-900"
             value={note.title}
             onChange={(e) => setNote({ ...note, title: e.target.value })}
           />
           <textarea
             placeholder="Content"
-            className="w-full border  rounded-lg p-3 focus:ring-2 focus:ring-gray-300 focus:outline-none md:col-span-2 placeholder-gray-900"
+            className="w-full border  rounded-lg p-3 focus:ring-2 focus:ring-gray-500 focus:outline-none md:col-span-2 placeholder-gray-900"
             value={note.content}
             onChange={(e) => setNote({ ...note, content: e.target.value })}
           />
