@@ -59,7 +59,7 @@ public class NoteController {
     public List<Note> getAllNotes() {
         return noteRepository.findAll(); // Spring automatically fetches all notes
     }
-
+    //for editing of notes
     @PutMapping("/{id}")
 public Note updateNote(@PathVariable String id, @RequestBody Note updatedNote) {
     return noteRepository.findById(id).map(note -> {
