@@ -3,7 +3,7 @@ package com.example.notify.controller;
 
 import java.util.List; // importing List to store and return multiple notes
 
-import org.springframework.beans.factory.annotation.Autowired; // For dependency injection
+
 import org.springframework.web.bind.annotation.*; // For REST API annotations
 
 import com.example.notify.model.Note; // importing the Note model
